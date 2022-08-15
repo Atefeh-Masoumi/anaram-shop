@@ -12,3 +12,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+:root {
+  --maincolor: #00428b;
+  --secoundcolor: #feba10;
+  --footcolor: #404763;
+  --headcartcolor: #00428b;
+  --mainfont: IRANYekan;
+  --mainfontnum: IRANYekannum;
+}
+@font-face {
+  font-family: IRANYekan;
+  src: url("/src/asset/Fonts/iranyekanwebmedium.woff2");
+}
+@font-face {
+  font-family: IRANYekannum;
+  src: url("/src/asset/Fonts/iranyekanwebmediumfanum.woff2");
+}

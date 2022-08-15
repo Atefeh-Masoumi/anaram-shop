@@ -1,0 +1,49 @@
+.Navbarcontainer{
+box-sizing: border-box;
+justify-content: center;
+display: flex;
+}
+.navbar-topsection{
+    padding: 7px 0px 5px 0px;     
+}
+.navbar-search-input{
+    background-color: #FFFFFF;
+    border-radius: 10px 10px 10px 10px;
+    line-height: 39px;
+    height: 50px;
+    width: 51%;
+    font-family: var(--mainfont);
+    font-size: 11px!important;
+    width: 60%;
+}
+
+
+
+
+/* shop */
+.shop-icon{ 
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-size: 21px;
+    background-color: var(--headcartcolor);
+}
+.shop-icon span{  
+    background-image: url(../../asset/images/shopping-bag.png);
+}
+
+/* login/signup style */
+.navabr-login-btn{
+    font-size: 1.2em;
+    background-color: #EFF1F5;
+    color: #555555;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 50%);
+}
+.navabr-login-btn p{
+    display: inline-block;
+    vertical-align: middle;
+    font-family: var(--mainfontnum);
+}
