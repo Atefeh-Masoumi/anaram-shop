@@ -2,6 +2,7 @@
 box-sizing: border-box;
 justify-content: center;
 display: flex;
+background-color: #EFF1F5;
 }
 .navbar-topsection{
     padding: 7px 0px 5px 0px;     
@@ -46,4 +47,11 @@ display: flex;
     display: inline-block;
     vertical-align: middle;
     font-family: var(--mainfontnum);
+}
+
+
+/* navbar menu */
+.navbar-product-botomsection{
+background-color: #fff;
+width: 82%;
 }

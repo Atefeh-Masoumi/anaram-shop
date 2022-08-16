@@ -6,6 +6,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
+}
+*{
+  
 }
 
 code {
@@ -13,6 +17,12 @@ code {
     monospace;
 }
 
+ul{
+  list-style:  none;
+}
+a{
+  text-decoration: none!important;
+}
 
 :root {
   --maincolor: #00428b;
