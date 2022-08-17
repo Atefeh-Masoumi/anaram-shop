@@ -1,104 +1,42 @@
-import React from "react";
 import "./navbar.css";
 import logo from "../../asset/images/Anaram-logo-main.png";
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Offcanvas from "react-bootstrap/Offcanvas";
 import { FaRegUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import {BiShoppingBag} from "react-icons/bi"
 const NavbarComponent = () => {
   return (
     <>
-    <div className="Navbarcontainer">
-      <section className="navbar-topsection">
-        {[false].map((expand) => (
-          <Navbar
-            key={expand}
-            bg="light"
-            expand={expand}
-            className="mb-3"
-            fixed="top"
-          >
-            <Container fluid>
-              <Navbar.Brand href="/">
-                <img src={logo} />
-              </Navbar.Brand>
-              {/* search */}
-              <Form className="d-flex">
-                <Form.Control
-                  type="search"
-                  placeholder="جستجوی محصولات..."
-                  className="me-2 navbar-search-input"
-                  aria-label="Search"
+      <div className="nav-container">
+        <section className="top-nav">
+          <div className="nav-top-container">
+            {/* logo */}
+            <div className="logo-container">
+              <img src={logo} alt="logo" className="logo" />
+            </div>
+            {/* searchbar */}
+            <div className="search-container">
+                <input type="text"  placeholder="جستجوی محصولات..."
+                className="me-2 navbar-search-input"
                 />
-              </Form>
-              {/* login */}
-              <div className="">
-                <Link to={"/profile"} className="navabr-login-btn">
-                  <FaRegUser fontSize={"18px"} className="ml-4" />
+            </div>
+            {/* cart and login */}
+            <div className="d-flex ">
+              <div className="login-container">
+                <Link to={"/profile"} className="navabr-login-btn d-flex">
+                  <FaRegUser fontSize={"18px"} className="pl-2" />
                   <p>ورود و عضویت</p>
                 </Link>
-
-                <Navbar.Toggle
-                  aria-controls={`offcanvasNavbar-expand-${expand}`}
-                  className="shop-icon"
-                />
               </div>
-
-                {/* shopping bag menu */}
-              <Navbar.Offcanvas
-                id={`offcanvasNavbar-expand-${expand}`}
-                aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-                placement="end"
-              >
-                <Offcanvas.Header closeButton>
-                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    سبدخرید
-                  </Offcanvas.Title>
-                </Offcanvas.Header>
-                <Offcanvas.Body>
-                  <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Nav.Link href="#action1">سبدخرید شما خالی است</Nav.Link>
-                  </Nav>
-                </Offcanvas.Body>
-              </Navbar.Offcanvas>
-            </Container>
-          </Navbar>
-        ))}
-      </section>
-      {/* nav bottom product */}
-      <div className="d-flex justify-content-center align-item-center ">
-        <div className="navbar-menu-div ">
-          <ul className="navbar-menu d-flex flex-row">
-            <li>
-              <span>باتری</span>
-              {/* submenu */}
-              <ul></ul>
-            </li>
-            <li>
-              <span>شارژ باتری</span>
-            </li>
-            <li>
-              <span>چراغ روشنایی</span>
-            </li>
-            <li>
-              <span>مجله</span>
-            </li>
-          </ul>
-        </div>
-        <div className="navbar-phone">
-          <div className="">
-
+              <div className="shopcart me-4">
+                <BiShoppingBag fontSize={"1.5rem"} className=""/>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
+        <section className="nav-bottom">
+          
+        </section>
       </div>
-    </div>
-
-    
     </>
   );
 };

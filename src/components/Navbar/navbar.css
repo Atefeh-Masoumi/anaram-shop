@@ -1,41 +1,42 @@
-.Navbarcontainer{
-box-sizing: border-box;
-justify-content: center;
-display: flex;
-background-color: #EFF1F5;
+.top-nav{
+    padding: 7px 0px 5px 0px;
 }
-.navbar-topsection{
-    padding: 7px 0px 5px 0px;     
+.nav-bottom{
+padding: 0px 0px 10px 0px;
+}
+.nav-top-container{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.logo-container{
+    display: flex;
+    width: 10%;
+    justify-content: center;
+}
+.logo{
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+}
+.search-container{
+    width: 60%;
 }
 .navbar-search-input{
     background-color: #FFFFFF;
     border-radius: 10px 10px 10px 10px;
     line-height: 39px;
     height: 50px;
-    width: 51%;
+    width: 60%;
     font-family: var(--mainfont);
     font-size: 11px!important;
-    width: 60%;
+    border: solid 1px #ccc;
 }
-
-
-
-
-/* shop */
-.shop-icon{ 
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-    font-size: 21px;
-    background-color: var(--headcartcolor);
-}
-.shop-icon span{  
-    background-image: url(../../asset/images/shopping-bag.png);
-}
-
-/* login/signup style */
 .navabr-login-btn{
     font-size: 1.2em;
     background-color: #EFF1F5;
@@ -47,11 +48,5 @@ background-color: #EFF1F5;
     display: inline-block;
     vertical-align: middle;
     font-family: var(--mainfontnum);
-}
-
-
-/* navbar menu */
-.navbar-product-botomsection{
-background-color: #fff;
-width: 82%;
+    font-size: 14px;
 }
