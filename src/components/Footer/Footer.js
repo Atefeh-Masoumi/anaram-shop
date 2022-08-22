@@ -164,7 +164,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* licence images */}
+        {/* license images */}
         <div className="bg-white d-flex justify-content-start ">
           <div>
             <img src={enamad} alt="enamad" />
