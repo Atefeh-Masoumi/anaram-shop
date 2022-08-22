@@ -23,9 +23,6 @@ import usagesubmenu4 from '../../asset/images/clock.png';
 import usagesubmenu5 from '../../asset/images/torch.png';
 import usagesubmenu6 from '../../asset/images/phone.png';
 
-
-
-
 const SubmenuBaseonTech = [
   { img: Techsubmenu1, name: "باتری شارژی" },
   { img: Techsubmenu2, name: "باتری آلکالاین" },
