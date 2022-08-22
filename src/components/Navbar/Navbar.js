@@ -50,7 +50,9 @@ const NavbarComponent = () => {
           <div className="nav-top-container">
             {/* logo */}
             <div className="logo-container">
+              <Link to={"/"}>
               <img src={logo} alt="logo" className="logo" />
+              </Link>
             </div>
             {/* searchbar */}
             <div className="search-container">
@@ -78,7 +80,7 @@ const NavbarComponent = () => {
               </div>
               {/* login */}
               <div className="login-container shopcart-container">
-                <Link to={"#"} className="navabr-login-btn d-flex">
+                <Link to={"/login"} className="navabr-login-btn d-flex">
                   <FaRegUser
                     fontSize={"18px"}
                     className="pl-2  "
