@@ -11,7 +11,6 @@ function AuthProviders({children}) {
 <AuthContex.Provider value={state}>
             <AuthContexDispatcher.Provider value={setState}>
                 {children}
-
             </AuthContexDispatcher.Provider>
         </AuthContex.Provider>
     </AuthContex.Provider>

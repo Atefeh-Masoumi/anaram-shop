@@ -41,3 +41,15 @@ ul{
   font-family: IRANYekannum;
   src: url("/src/asset/Fonts/iranyekanwebmediumfanum.woff2");
 }
+.mainfont{
+  font-family: var(--mainfont);
+}
+.fs-13 {
+  font-size: 13px;
+}
+.font-family-num {
+  font-family: var(--mainfontnum);
+}
+.bg-color{
+background-color: #eff1f5;
+}
