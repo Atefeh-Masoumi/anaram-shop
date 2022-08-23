@@ -24,10 +24,14 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div>
+      {/* heading text home */}
+      <div className="d-flex justify-content-center align-items-center mt-4">
         <div>
           <div>
-            <div className="svg"></div>
+            <div className="text-align-center">
+              <h2 className="heading-title">انواع باتری برند وارتا آلمان</h2>
+            </div>
+
           </div>
         </div>
       </div>

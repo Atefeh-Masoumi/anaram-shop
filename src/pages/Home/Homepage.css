@@ -100,3 +100,9 @@
     background-color: #FFCC01;
     color: #000;
 }
+
+.heading-title{
+    font-family: var(--mainfont);
+    font-size: 20px;
+    font-weight: 600;
+}

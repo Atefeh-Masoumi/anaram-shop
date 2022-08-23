@@ -22,7 +22,9 @@ const Login = () => {
         <form>
             <input name="email" type="email" onChange={changeHandler}/>
             <input name="password" type="password" onChange={changeHandler} />
-            <button type='submit'></button>
+            <button type='submit'>
+                ورود
+            </button>
 
         </form>   
         </>
