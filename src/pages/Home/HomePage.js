@@ -7,6 +7,8 @@ import baterysizec from "../../asset/images/batery-size-c.webp";
 import baterysized from "../../asset/images/battery-size-d.webp";
 import bateryketabi from "../../asset/images/battery-ketabi.webp";
 import bateryseke from "../../asset/images/batery-sekei.webp";
+import CardSlider from "../../components/CardSlider/CardSlider";
+
 const Battery = [
   {
     img: bateryghlmi,
@@ -75,14 +77,15 @@ const HomePage = () => {
                     <h2 className=" mainfont d-flex justify-content-center align-items-center fs-13 text-align-center">
                       {b.name}
                     </h2>
-                  </div>
-
-                
+                  </div>  
               </div>)}
             </div>
           </div>
         </div>
       </div>
+
+      <CardSlider/>
+      
     </>
   );
 };

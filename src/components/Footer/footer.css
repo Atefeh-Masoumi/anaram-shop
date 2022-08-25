@@ -46,12 +46,7 @@ footer{
   border-bottom: solid 5px #ffba00;
   margin-bottom: 7px;
 }
-.fs-13 {
-  font-size: 13px;
-}
-.font-family-num {
-  font-family: var(--mainfontnum);
-}
+
 .font-weight-300 {
   font-weight: 300;
 }

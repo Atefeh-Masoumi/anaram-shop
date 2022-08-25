@@ -9,7 +9,7 @@ export const Prouducts =[
             "./asset/images/backend-temprory-photos/ghalami/AA-2100-3.webp",
         ],
         tag:[
-            "toy","torch","camera","charging"
+            "toy","torch","camera","charging","nickelmetal-hydrid"
         ],
 
     
