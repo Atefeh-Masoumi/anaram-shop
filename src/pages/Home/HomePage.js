@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Homepage.css";
+import * as data from "../../data";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 import bateryghlmi from "../../asset/images/battery-ghlami.webp";
 import baterynimghlmi from "../../asset/images/battery-nim-ghalami.webp";
 import baterysizec from "../../asset/images/batery-size-c.webp";
@@ -38,6 +46,9 @@ const Battery = [
 ];
 
 const HomePage = () => {
+  const [products, setProducts] = useState(data.Prouducts);
+  console.log(products);
+
   return (
     <>
       {/* image header */}
@@ -65,27 +76,58 @@ const HomePage = () => {
         <div>
           <div>
             <div className="">
-              <h2 className="heading-title text-center">انواع باتری برند وارتا آلمان</h2>
+              <h2 className="heading-title text-center">
+                انواع باتری برند وارتا آلمان
+              </h2>
             </div>
             <div className="d-flex flex-row p-2 ">
-              {Battery.map(b=><div className="m-4 d-flex justify-content-center flex-column text-category">
-                <div className="d-flex bg-white Home-img-heading ">
-                  <img src={b.img} alt={b.name} className="img-heading"/>
-                </div>
-                
+              {Battery.map((b) => (
+                <div className="m-4 d-flex justify-content-center flex-column text-category">
+                  <div className="d-flex bg-white Home-img-heading ">
+                    <img src={b.img} alt={b.name} className="img-heading" />
+                  </div>
+
                   <div className="text-heading-container  text-align-center">
                     <h2 className=" mainfont d-flex justify-content-center align-items-center fs-13 text-align-center">
                       {b.name}
                     </h2>
-                  </div>  
-              </div>)}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
 
-      <CardSlider/>
-      
+      <div className="d-flex justify-content-center align-items-center">
+        <div className="row d-flex justify-content-center flex-row">
+          {products
+            .filter((p) => p.category === "ghalami")
+            .map((product) => (
+              <div className="col-md-2 col-sm-6" key={product.id}>
+                <CardSlider product={product} />
+              </div>
+            ))}
+        </div>
+      </div>
+
+      <div className="d-flex justify-content-center align-items-center">
+        <div className=" d-flex justify-content-center flex-row">
+        
+          {products
+            .filter((p) => p.category === "nimghalami")
+            .map((product) => (
+
+              <div className="col-md-4 col-sm-6" key={product.id}>
+                <CardSlider product={product} />
+              </div>
+            ))}
+ 
+    
+
+   
+        </div>
+      </div>
     </>
   );
 };
