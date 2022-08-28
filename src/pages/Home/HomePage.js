@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Homepage.css";
 import * as data from "../../data";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Navigation, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import bateryghlmi from "../../asset/images/battery-ghlami.webp";
 import baterynimghlmi from "../../asset/images/battery-nim-ghalami.webp";
 import baterysizec from "../../asset/images/batery-size-c.webp";
@@ -104,30 +104,39 @@ const HomePage = () => {
           {products
             .filter((p) => p.category === "ghalami")
             .map((product) => (
-              <div className="col-md-2 col-sm-6" key={product.id}>
+              <div className="col-md-3 col-sm-6" key={product.id}>
                 <CardSlider product={product} />
               </div>
             ))}
         </div>
       </div>
 
-      <div className="d-flex justify-content-center align-items-center">
-        <div className=" d-flex justify-content-center flex-row">
-        
+      <div className="d-flex justify-content-center align-items-center ">
+      
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={20}
+          slidesPerGroup={4}
+          loop={true}
+          
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper "
+        >
           {products
             .filter((p) => p.category === "nimghalami")
             .map((product) => (
-
               <div className="col-md-4 col-sm-6" key={product.id}>
-                <CardSlider product={product} />
+                <SwiperSlide>
+                  <CardSlider product={product} />
+                </SwiperSlide>
               </div>
             ))}
- 
-    
-
-   
-        </div>
-      </div>
+        </Swiper>
+        </div>      
     </>
   );
 };

@@ -6,7 +6,7 @@ import {AiOutlineShoppingCart,AiOutlineSearch,AiOutlineStar} from 'react-icons/a
 const CardSlider = ({ product }) => {
   return (
    
-    <div className="boxshadow ">
+  <div className="boxshadow ">
   <div className="product-grid">
     <div className="product-image">
         <a href="#" className="image">

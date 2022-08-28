@@ -55,7 +55,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-lg-6 d-flex justify-content-center  align-items-start flex-row">
+            <div className="col-lg-6  d-flex justify-content-center  align-items-start flex-row">
               {/* second column */}
               <div className="col-lg-2 d-flex flex-column justify-content-center ">
                 <div className="footer-columns-title">

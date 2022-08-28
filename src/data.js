@@ -9,6 +9,8 @@ import aalonglife4pack1 from "./asset/images/backend-temprory-photos/ghalami/aa-
 import aalonglife4pack2 from "./asset/images/backend-temprory-photos/ghalami/aa-SuperLife-4pack-2.webp";
 import nimghalamicharging2pack1 from "./asset/images/backend-temprory-photos/nimghalami/nimghalami-charging-2pack-1.webp";
 import nimghalamicharging2pack2 from "./asset/images/backend-temprory-photos/nimghalami/nimghalami-charging-2pack-2.webp";
+import AAALonglifePower4pack1 from "./asset/images/backend-temprory-photos/nimghalami/AAA-Longlife-Power-4pack-1.webp";
+import AAALonglifePower4pack2 from "./asset/images/backend-temprory-photos/nimghalami/AAA-Longlife-Power-4pack-2.webp";
 
 export const Prouducts =[
     {
@@ -96,16 +98,70 @@ export const Prouducts =[
     {
         id:6,
         category: "nimghalami",
-        name:"Varta Alkaline LONGLIFE AA battery - LR6",
-        namepersian:"باتری قلمی آلکالاین وارتا Longlife بسته 4 عددی",
-        price:"53500",
+        name:"Varta Alkaline LONGLIFE POWER AAA battery - LR03",
+        namepersian:"باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 4 عددی",
+        price:"64500",
         img:[
-            aalonglife4pack1,
-            "./asset/images/backend-temprory-photos/ghalami/aa-SuperLife-4pack-2.webp",
+            AAALonglifePower4pack1,
+            AAALonglifePower4pack2,
             
         ],
         tag:[
-            "alkaline","remote","clock"
+            "alkaline","torch"
+        ],
+
+    
+    },
+    {
+        id:7,
+        category: "nimghalami",
+        name:"Varta Zinc carbon SuperLife AAA battery - R03",
+        namepersian:"باتری نیم قلمی معمولی وارتا Super Life بسته 4 عددی",
+        price:"28000",
+        offprice:"22500",
+        img:[
+            AAALonglifePower4pack1,
+            AAALonglifePower4pack2,
+            
+        ],
+        tag:[
+            "zinkcarbon",
+        ],
+
+    
+    },
+    {
+        id:8,
+        category: "nimghalami",
+        name:"Varta Zinc carbon SuperLife AAA battery - R03",
+        namepersian:"باتری نیم قلمی معمولی وارتا Super Life بسته 4 عددی",
+        price:"28000",
+        offprice:"22500",
+        img:[
+            AAALonglifePower4pack1,
+            AAALonglifePower4pack2,
+            
+        ],
+        tag:[
+            "zinkcarbon",
+        ],
+
+    
+    },
+    {
+        id:9,
+        category: "nimghalami",
+        name:"Varta Zinc carbon SuperLife AAA battery - R03",
+        namepersian:"باتری نیم قلمی معمولی وارتا Super Life بسته 4 عددی",
+        price:"28000",
+        offprice:"22500",
+        img:[
+            AAALonglifePower4pack1,
+            AAALonglifePower4pack2,
+            
+        ],
+        tag:[
+            "zinkcarbon",
         ],
 
     
