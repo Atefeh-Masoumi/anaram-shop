@@ -128,15 +128,41 @@
   background-color: #ffcc01;
   border-radius: 15px 15px 15px 15px;
 }
-.text-category:hover{
-    color: #000;
+.text-category:hover {
+  color: #000;
 }
-.text-category{
-    color: #ffffff;
+.text-category {
+  color: #ffffff;
 }
+.visitmorebtn {
+  font-family: var(--mainfont);
+  font-weight: 500;
+  fill: #00428b;
+  color: #00428b;
+  background-color: #61ce7000;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #00428b;
+  border-radius: 5px 5px 5px 5px;
+  padding: 5px;
+}
+.visitmorebtn span{
+  color: #00428b;
+  padding: 1px;
+  margin: 1px;
 
-@media(min-width:1000px){
-  .mySwiper.swiper{
+}
+.visitmorebtn:hover {
+  background-color:#00428b;
+}
+.visitmorebtn:hover span{
+color: #fff;
+}
+.cardslide-header{
+  font-family: var(--mainfont);
+}
+@media (min-width: 1000px) {
+  .mySwiper.swiper {
     margin-left: 250px;
     margin-right: 250px;
   }

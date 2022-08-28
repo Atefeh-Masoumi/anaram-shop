@@ -1,9 +1,9 @@
 import React from "react";
-import "./cardSlider.css";
+import "./productcard.css";
 import {FaRegHeart, FaRandom} from 'react-icons/fa';
 import {AiOutlineShoppingCart,AiOutlineSearch,AiOutlineStar} from 'react-icons/ai';
 
-const CardSlider = ({ product }) => {
+const ProductCard = ({ product }) => {
   return (
    
   <div className="boxshadow ">
@@ -43,4 +43,4 @@ const CardSlider = ({ product }) => {
   );
 };
 
-export default CardSlider;
+export default ProductCard;

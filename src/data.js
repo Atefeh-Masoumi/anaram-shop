@@ -11,6 +11,13 @@ import nimghalamicharging2pack1 from "./asset/images/backend-temprory-photos/nim
 import nimghalamicharging2pack2 from "./asset/images/backend-temprory-photos/nimghalami/nimghalami-charging-2pack-2.webp";
 import AAALonglifePower4pack1 from "./asset/images/backend-temprory-photos/nimghalami/AAA-Longlife-Power-4pack-1.webp";
 import AAALonglifePower4pack2 from "./asset/images/backend-temprory-photos/nimghalami/AAA-Longlife-Power-4pack-2.webp";
+import AAAsuperlifepack41 from "./asset/images/backend-temprory-photos/nimghalami/AAA-superlife-pack4-1.webp";
+import AAAsuperlifepack42 from "./asset/images/backend-temprory-photos/nimghalami/AAA-superlife-pack4-2.webp";
+import AAAchargingpack21 from './asset/images/backend-temprory-photos/nimghalami/AAA-charging-pack2-1.webp';
+import AAAchargingpack22 from './asset/images/backend-temprory-photos/nimghalami/AAA-charging-pack2-2.webp';
+import AAA550mA4pack1 from './asset/images/backend-temprory-photos/nimghalami/AAA-550mA-4pack-1.webp';
+import AAA550mA4pack2 from './asset/images/backend-temprory-photos/nimghalami/AAA-550mA-4pack-2.webp';
+
 
 export const Prouducts =[
     {
@@ -120,8 +127,8 @@ export const Prouducts =[
         price:"28000",
         offprice:"22500",
         img:[
-            AAALonglifePower4pack1,
-            AAALonglifePower4pack2,
+            AAAsuperlifepack41,
+            AAAsuperlifepack42,
             
         ],
         tag:[
@@ -133,17 +140,17 @@ export const Prouducts =[
     {
         id:8,
         category: "nimghalami",
-        name:"Varta Zinc carbon SuperLife AAA battery - R03",
-        namepersian:"باتری نیم قلمی معمولی وارتا Super Life بسته 4 عددی",
-        price:"28000",
-        offprice:"22500",
+        name:"Varta Recharge Accu Power AAA battery - HR03",
+        namepersian:"باتری نیم قلمی شارژی وارتا 800mAh بسته 2 عددی",
+        price:"114000",
+        offprice:"",
         img:[
-            AAALonglifePower4pack1,
-            AAALonglifePower4pack2,
             
+            AAAchargingpack21,
+            AAAchargingpack22,
         ],
         tag:[
-            "zinkcarbon",
+            "telphone","torch","camera","charging","nickelmetal-hydrid","clock"
         ],
 
     
@@ -151,17 +158,16 @@ export const Prouducts =[
     {
         id:9,
         category: "nimghalami",
-        name:"Varta Zinc carbon SuperLife AAA battery - R03",
-        namepersian:"باتری نیم قلمی معمولی وارتا Super Life بسته 4 عددی",
-        price:"28000",
-        offprice:"22500",
+        name:"Varta Recharge Accu Power AAA battery - HR03",
+        namepersian:"باتری نیم قلمی شارژی وارتا 550mAh بسته 4 عددی",
+        price:"198000",
+        offprice:"",
         img:[
-            AAALonglifePower4pack1,
-            AAALonglifePower4pack2,
+            AAA550mA4pack1,AAA550mA4pack2,
             
         ],
         tag:[
-            "zinkcarbon",
+            "telphone","torch","camera","charging","nickelmetal-hydrid","clock"
         ],
 
     

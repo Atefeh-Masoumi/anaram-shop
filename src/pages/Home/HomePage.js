@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Homepage.css";
+import { HiArrowLeft } from "react-icons/hi";
 import * as data from "../../data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -15,7 +16,7 @@ import baterysizec from "../../asset/images/batery-size-c.webp";
 import baterysized from "../../asset/images/battery-size-d.webp";
 import bateryketabi from "../../asset/images/battery-ketabi.webp";
 import bateryseke from "../../asset/images/batery-sekei.webp";
-import CardSlider from "../../components/CardSlider/CardSlider";
+import ProductCard from "../../components/ProductCard/ProductCard";
 
 const Battery = [
   {
@@ -99,26 +100,37 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="d-flex justify-content-center align-items-center">
-        <div className="row d-flex justify-content-center flex-row">
-          {products
-            .filter((p) => p.category === "ghalami")
-            .map((product) => (
-              <div className="col-md-3 col-sm-6" key={product.id}>
-                <CardSlider product={product} />
-              </div>
-            ))}
+      <div className="d-flex flex-column justify-content-center">
+        <div className="d-flex align-items-center justify-content-center">
+          <span className="cardslide-header fs-5">باتری قلمی</span>
+          <div className="visitmorebtn">
+            <Link to="#" className="d-flex ">
+              <span className="">مشاهده همه</span>
+              <span className="">
+                <HiArrowLeft fontSize={"18px"} />
+              </span>
+            </Link>
+          </div>
+        </div>
+        <div className="d-flex justify-content-center align-items-center">
+          <div className="row d-flex justify-content-center flex-row">
+            {products
+              .filter((p) => p.category === "ghalami")
+              .map((product) => (
+                <div className="col-md-3 col-sm-6" key={product.id}>
+                  <ProductCard product={product} />
+                </div>
+              ))}
+          </div>
         </div>
       </div>
 
-      <div className="d-flex justify-content-center align-items-center ">
-      
+      <div className="d-flex justify-content-center align-items-center">
         <Swiper
           slidesPerView={3}
           spaceBetween={20}
           slidesPerGroup={4}
           loop={true}
-          
           pagination={{
             clickable: true,
           }}
@@ -131,12 +143,12 @@ const HomePage = () => {
             .map((product) => (
               <div className="col-md-4 col-sm-6" key={product.id}>
                 <SwiperSlide>
-                  <CardSlider product={product} />
+                  <ProductCard product={product} />
                 </SwiperSlide>
               </div>
             ))}
         </Swiper>
-        </div>      
+      </div>
     </>
   );
 };
