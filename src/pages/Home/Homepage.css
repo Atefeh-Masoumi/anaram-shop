@@ -134,3 +134,10 @@
 .text-category{
     color: #ffffff;
 }
+
+@media(min-width:1000px){
+  .mySwiper.swiper{
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+}

@@ -1,10 +1,14 @@
 import React from "react";
 import "./footer.css";
 import { BiCircle } from "react-icons/bi";
+import { AiOutlineInstagram } from "react-icons/ai";
+import {FaWhatsapp,FaFacebook} from "react-icons/fa";
+import {BsTelegram,BsPinterest} from "react-icons/bs";
+import {SiAparat} from "react-icons/si";
 import enamad from "../../asset/images/e-namad.webp";
 import pasargadbank from "../../asset/images/Pasargad_Electronic_Payment_Services_Company_logo.webp";
 import font from "../../asset/images/font-anaram.webp";
-import logofav from '../../asset/images/Anaram-fav.webp';
+import logofav from "../../asset/images/Anaram-fav.webp";
 const Footer = () => {
   return (
     <footer>
@@ -178,22 +182,29 @@ const Footer = () => {
         </div>
       </div>
 
-      <section className=" d-flex justify-content-between align-items-center  height border-top">
-        {/* logo */}
-        <div className="d-flex justify-content-center align-items-center">
-            <img src={logofav} alt="footer-logo" className="footer-logo"/>
+      <section className=" d-flex justify-content-center align-items-center height border-top">
+    
+          {/* logo */}
+          <div className="d-flex justify-content-center align-items-center">
+            <img src={logofav} alt="footer-logo" className="footer-logo" />
+          </div>
+          {/* txt */}
+          <div className="d-flex justify-content-center align-items-center text-align-center">
+            <p className="footer-firstcolumn-text">
+              تمام حقوق متعلق به فروشگاه آنارام می باشد.
+            </p>
+          </div>
+          {/* social icon */}
+          <div className="d-flex justify-content-between m-2 p-2 socialicon">
+          <FaWhatsapp/>
+          <AiOutlineInstagram/>
+          <BsTelegram/>
+          <FaFacebook/>
+          <BsPinterest/>
+          <SiAparat/>
 
-        </div>
-        {/* txt */}
-        <div className="d-flex justify-content-center align-items-center text-align-center">
-            <p className="footer-firstcolumn-text">تمام حقوق متعلق به فروشگاه آنارام می باشد.</p>
-
-        </div>
-        {/* social icon */}
-        <div>
-
-        </div>
-
+          </div>
+        
       </section>
     </footer>
   );

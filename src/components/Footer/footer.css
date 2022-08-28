@@ -69,3 +69,14 @@ transition: opacity 1s;
 .height{
     height: 3rem;
 }
+.socialicon{
+
+}
+.socialicon svg {
+  margin: 3px;
+  font-size: 25px;
+  background-color: var(--maincolor);
+  border-radius: 10%;
+  color: #fff;
+  padding: 2px;
+}
