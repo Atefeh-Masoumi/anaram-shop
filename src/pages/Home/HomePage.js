@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Homepage.css";
 import { HiArrowLeft } from "react-icons/hi";
 import * as data from "../../data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Navigation, Pagination } from "swiper";
+import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -47,11 +47,11 @@ const Battery = [
 ];
 
 const HomePage = () => {
-  const [products, setProducts] = useState();
-  console.log(products);
+  
+
 
   return (
-    <>
+    <div className="bg-color">
       {/* image header */}
       <div className="header-container bg-color">
         <div className="header-wrapper">
@@ -99,8 +99,10 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      
 
-      <div className="d-flex flex-column justify-content-center">
+      {/* ghalami Category */}
+      <div className="d-flex flex-column justify-content-center mt-4">
         <div className="d-flex align-items-center justify-content-center">
           <span className="cardslide-header fs-5">باتری قلمی</span>
           <div className="visitmorebtn">
@@ -113,18 +115,44 @@ const HomePage = () => {
           </div>
         </div>
         <div className="d-flex justify-content-center align-items-center">
-          <div className="row d-flex justify-content-center flex-row">
-            {data.ghalami
-              .map((product) => (
-                <div className="col-md-3 col-sm-6" key={product.id}>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={20}
+            slidesPerGroup={1}
+            loop={true}
+            navigation={true}
+            modules={[Navigation]}
+            className="mySwiper "
+          >
+            {data.ghalami.map((product) => (
+              <div className="col-md-4 col-sm-6" key={product.id}>
+                <SwiperSlide>
                   <ProductCard product={product} />
-                </div>
-              ))}
-          </div>
+                </SwiperSlide>
+              </div>
+            ))}
+          </Swiper>
         </div>
       </div>
 
-      <div className="d-flex justify-content-center align-items-center">
+
+      {/* Nimghamali category*/}
+      <div className="d-flex align-items-center justify-content-center mt-8">
+        <div className="d-flex justify-content-between mt-4">
+          <div>
+            <span className="cardslide-header fs-5">باتری نیم قلمی</span>
+          </div>
+          <div className="visitmorebtn">
+            <Link to="#" className="d-flex ">
+              <span className="">مشاهده همه</span>
+              <span className="">
+                <HiArrowLeft fontSize={"18px"} />
+              </span>
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className="d-flex justify-content-center align-items-center mt-2">
         <Swiper
           slidesPerView={3}
           spaceBetween={20}
@@ -134,17 +162,55 @@ const HomePage = () => {
           modules={[Navigation]}
           className="mySwiper "
         >
-          {data.Nimghalami
-            .map((product) => (
-              <div className="col-md-4 col-sm-6" key={product.id}>
-                <SwiperSlide>
-                  <ProductCard product={product} />
-                </SwiperSlide>
-              </div>
-            ))}
+          {data.Nimghalami.map((product) => (
+            <div className="col-md-4 col-sm-6" key={product.id}>
+              <SwiperSlide>
+                <ProductCard product={product} />
+              </SwiperSlide>
+            </div>
+          ))}
         </Swiper>
       </div>
-    </>
+
+      {/* sekei category */}
+
+      <div className="d-flex align-items-center justify-content-center  mt-8">
+        <div className="d-flex justify-content-between mt-4">
+          <div>
+            <span className="cardslide-header fs-5">باتری سکه ای </span>
+          </div>
+          <div className="visitmorebtn">
+            <Link to="#" className="d-flex ">
+              <span className="">مشاهده همه</span>
+              <span className="">
+                <HiArrowLeft fontSize={"18px"} />
+              </span>
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className="d-flex justify-content-center align-items-center mt-2">
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={20}
+          slidesPerGroup={1}
+          loop={true}
+          navigation={true}
+          modules={[Navigation]}
+          className="mySwiper "
+        >
+          {data.sekei.map((product) => (
+            <div className="col-md-4 col-sm-6" key={product.id}>
+              <SwiperSlide>
+                <ProductCard product={product} />
+              </SwiperSlide>
+            </div>
+          ))}
+        </Swiper>
+      </div>
+
+    </div>
+    // end of home page
   );
 };
 

@@ -11,7 +11,7 @@ import font from "../../asset/images/font-anaram.webp";
 import logofav from "../../asset/images/Anaram-fav.webp";
 const Footer = () => {
   return (
-    <footer>
+    <footer >
       <div className="bg-white d-flex justify-content-center align-items-center flex-column">
         <div className="footer-container bg-white d-flex justify-content-center align-items-center">
           <div className=" d-flex justify-content-center  flex-row">

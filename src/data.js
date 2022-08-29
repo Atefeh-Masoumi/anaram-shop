@@ -17,7 +17,15 @@ import AAAchargingpack21 from './asset/images/backend-temprory-photos/nimghalami
 import AAAchargingpack22 from './asset/images/backend-temprory-photos/nimghalami/AAA-charging-pack2-2.webp';
 import AAA550mA4pack1 from './asset/images/backend-temprory-photos/nimghalami/AAA-550mA-4pack-1.webp';
 import AAA550mA4pack2 from './asset/images/backend-temprory-photos/nimghalami/AAA-550mA-4pack-2.webp';
-
+// sekei
+import coinLR441 from "./asset/images/backend-temprory-photos/sekei/coin-LR44-1.webp";
+import coinLR442 from "./asset/images/backend-temprory-photos/sekei/coin-LR44-2.webp";
+import coinCR20321 from "./asset/images/backend-temprory-photos/sekei/coin-CR2032-1.webp";
+import coinCR20322 from "./asset/images/backend-temprory-photos/sekei/coin-CR2032-2.webp";
+import coinCR20161 from "./asset/images/backend-temprory-photos/sekei/coin-CR2016-1.webp";
+import coinCR20162 from "./asset/images/backend-temprory-photos/sekei/coin-CR2016-2.webp";
+import coinCR24301 from './asset/images/backend-temprory-photos/sekei/coin-CR2430-1.webp';
+import coinCR24302 from './asset/images/backend-temprory-photos/sekei/coin-CR2430-2.webp';
 
 export const ghalami =[
     {
@@ -178,4 +186,76 @@ export const Nimghalami=[
 
     
     },
+]
+
+export const sekei =[
+    {
+        id:1,
+        category: "coin",
+        name:"Varta LR44 coin battery",
+        namepersian:"باتری سکه ای V13GA / LR44 وارتا",
+        price:"20000",
+        img:[
+            
+            coinLR441,coinLR442
+           
+        ],
+        tag:[
+            "alkaline",
+        ],
+
+    
+    },
+    {
+        id:2,
+        category: "coin",
+        name:"Varta Lithium Coin CR2032 battery",
+        namepersian:"باتری سکه ای CR2032 وارتا",
+        price:"23000",
+        img:[
+            
+            coinCR20321,coinCR20322
+           
+        ],
+        tag:[
+            "toy","camera","remote","litium","medical"
+        ],
+
+    
+    },
+    {
+        id:3,
+        category: "coin",
+        name:"Varta Lithium Coin CR2016 battery",
+        namepersian:"باتری سکه ای CR2016 وارتا",
+        price:"25000",
+        img:[
+            
+            coinCR20161,coinCR20162
+           
+        ],
+        tag:[
+            "remote","litium","medical"
+        ],
+
+    
+    },
+    {
+        id:4,
+        category: "coin",
+        namepersian:"باتری سکه ای CR2430 وارتا",
+        name:"Varta Lithium Coin CR2430 battery",
+        price:"20000",
+        img:[
+            
+            coinCR24301,coinCR24302
+           
+        ],
+        tag:[
+            "camera","remote","litium","medical"
+        ],
+
+    
+    },
+    
 ]
