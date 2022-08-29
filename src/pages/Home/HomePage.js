@@ -47,7 +47,7 @@ const Battery = [
 ];
 
 const HomePage = () => {
-  const [products, setProducts] = useState(data.Prouducts);
+  const [products, setProducts] = useState();
   console.log(products);
 
   return (
@@ -114,8 +114,7 @@ const HomePage = () => {
         </div>
         <div className="d-flex justify-content-center align-items-center">
           <div className="row d-flex justify-content-center flex-row">
-            {products
-              .filter((p) => p.category === "ghalami")
+            {data.ghalami
               .map((product) => (
                 <div className="col-md-3 col-sm-6" key={product.id}>
                   <ProductCard product={product} />
@@ -129,17 +128,13 @@ const HomePage = () => {
         <Swiper
           slidesPerView={3}
           spaceBetween={20}
-          slidesPerGroup={4}
+          slidesPerGroup={1}
           loop={true}
-          pagination={{
-            clickable: true,
-          }}
           navigation={true}
-          modules={[Pagination, Navigation]}
+          modules={[Navigation]}
           className="mySwiper "
         >
-          {products
-            .filter((p) => p.category === "nimghalami")
+          {data.Nimghalami
             .map((product) => (
               <div className="col-md-4 col-sm-6" key={product.id}>
                 <SwiperSlide>

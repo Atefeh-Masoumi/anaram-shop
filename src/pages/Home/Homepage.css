@@ -167,3 +167,11 @@ color: #fff;
     margin-right: 250px;
   }
 }
+.mySwiper
+.swiper-button-next,
+.mySwiper
+.swiper-button-prev {
+    color: #000 ;
+    fill: black;
+    stroke: black ;
+}

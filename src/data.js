@@ -19,7 +19,7 @@ import AAA550mA4pack1 from './asset/images/backend-temprory-photos/nimghalami/AA
 import AAA550mA4pack2 from './asset/images/backend-temprory-photos/nimghalami/AAA-550mA-4pack-2.webp';
 
 
-export const Prouducts =[
+export const ghalami =[
     {
         id:1,
         category: "ghalami",
@@ -85,6 +85,12 @@ export const Prouducts =[
 
     
     },
+   
+
+
+]
+
+export const Nimghalami=[
     {
         id:5,
         category: "nimghalami",
@@ -172,7 +178,4 @@ export const Prouducts =[
 
     
     },
-
-
 ]
-
