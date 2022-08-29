@@ -1,6 +1,6 @@
 import React from "react";
 import "./input.css";
-import './borderanimation.scss';
+import "./borderanimation.scss"
 const Input = ({ formik, name, label, type = "text" }) => {
   return (
     <div className="formControl">
@@ -13,7 +13,7 @@ const Input = ({ formik, name, label, type = "text" }) => {
           id={name}
           type={type}
           name={name}
-          className="inputstyle borderanimation"
+          className="inputstyle "
           {...formik.getFieldProps(name)}
         />
       </div>

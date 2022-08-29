@@ -66,12 +66,12 @@ const Login = () => {
 
   return (
     <div className="formContainer mb-8">
-      <form onSubmit={formik.handleSubmit} className="borderanimation m-5 p-5 rounded h-100">
-        <Input formik={formik} name="email" label="Email" type="email" />
+      <form onSubmit={formik.handleSubmit} className=" m-5 p-5 rounded h-100">
+        <Input formik={formik} name="email" label="ایمیل" type="email" />
         <Input
           formik={formik}
           name="password"
-          label="Password"
+          label="رمز عبور"
           type="password"
           autocomplete="on"
         />
@@ -79,11 +79,11 @@ const Login = () => {
         <button
           type="submit"
           disabled={!formik.isValid}
-          className="border-0 outline-none rounded borderbtn-animation"
+          className="border-0 outline-none rounded  borderbtn-animation"
         >
           <span>
             <span>
-              <span>Login </span>
+              <span>ورود </span>
             </span>
           </span>
         </button>
@@ -91,10 +91,10 @@ const Login = () => {
         {err && <p style={{ color: "red", marginTop: "20px" }}> {err}</p>}
 
         <Link to={`/signup`}>
-          <button className="border-0 outline-none rounded borderbtn-animation ms-4">
+          <button className="border-0 outline-none rounded borderbtn-animation me-4">
           <span>
             <span>
-              <span>signup</span>
+              <span>عضویت</span>
             </span>
           </span>
           </button>

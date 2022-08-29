@@ -30,7 +30,8 @@ const validationSchema = Yup.object({
     .nullable(),
   password: Yup.string()
     .required("رمز عبور ضروری است")
-    .matches( 8,
+    .matches(
+      8,
       "Password must contain at least 8 characters,number and special character"
     ),
   passwordconfirm: Yup.string()
@@ -91,21 +92,26 @@ const SignupForm = () => {
         onSubmit={formik.handleSubmit}
         className="borderanimation m-5 p-5 rounded h-100"
       >
-        <Input formik={formik} name="name" label="Name" />
-        <Input formik={formik} name="email" label="Email" type="email" />
+        <Input formik={formik} name="name" label="نام" />
+        <Input formik={formik} name="email" label="ایمیل" type="email" />
 
-        <Input formik={formik} name="phoneNumber" label="Number" type="tel" />
+        <Input
+          formik={formik}
+          name="phoneNumber"
+          label="شماره تماس"
+          type="tel"
+        />
         <Input
           formik={formik}
           name="password"
-          label="Password"
+          label="رمز عبور"
           type="password"
           autocomplete="on"
         />
         <Input
           formik={formik}
           name="passwordconfirm"
-          label="Password Confirm"
+          label="تایید رمزعبور"
           type="password"
         />
         <button
@@ -113,23 +119,22 @@ const SignupForm = () => {
           disabled={!formik.isValid}
           className=" border-0 outline-none rounded borderbtn-animation ms-4 text-align-center"
         >
-          
+          <span>
             <span>
-              <span>
-                <span>signup</span>
-              </span>
+              <span>عضویت</span>
             </span>
-          </button>
-        
+          </span>
+        </button>
+
         {error && <p className="error"> {error}</p>}
 
         <Link to={`/login?redirect=${redirect}`}>
-        <button className="border-0 outline-none rounded borderbtn-animation ms-4">
-          <span>
+          <button className="border-0 outline-none rounded borderbtn-animation ms-4">
             <span>
-              <span>login</span>
+              <span>
+                <span>ورود</span>
+              </span>
             </span>
-          </span>
           </button>
         </Link>
       </form>
