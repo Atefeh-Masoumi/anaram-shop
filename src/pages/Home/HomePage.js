@@ -47,8 +47,6 @@ const Battery = [
 ];
 
 const HomePage = () => {
-  
-
 
   return (
     <div className="bg-color">

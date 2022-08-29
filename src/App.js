@@ -4,6 +4,8 @@ import Footer from "./components/Footer/Footer";
 import NavbarComponent from "./components/Navbar/Navbar";
 import HomePage from "./pages/Home/HomePage";
 import LoginPage from "./pages/LoginPage/Login";
+import Products from "./pages/ProductPages/AllProducts";
+import AAASizeBattery from "./pages/ProductPages/categories/Battery/AAA/AAA";
 import Profilepage from "./pages/Profile/Profilepage";
 import SignUpPage from "./pages/SignUpPage/SignupPage";
 
@@ -16,6 +18,8 @@ function App() {
         <Route path="/login" element={<LoginPage/>}/>
         <Route path="/signup" element={<SignUpPage/>}/>
         <Route path="/profile" element={<Profilepage/>}/>
+        <Route path="/products" element={<Products/>}/>
+        <Route path="/products/battery/aaa-size" element={<AAASizeBattery/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
