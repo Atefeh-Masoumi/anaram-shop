@@ -1,5 +1,6 @@
 import React from "react";
 import "./productcard.css";
+import {Link} from 'react-router-dom';
 import { FaRegHeart, FaRandom } from "react-icons/fa";
 import {
   AiOutlineShoppingCart,
@@ -8,14 +9,15 @@ import {
 } from "react-icons/ai";
 
 const ProductCard = ({ product }) => {
+  const {id,img,namepersian,price} = product;
   return (
-    <div className="boxshadow ">
+    <div className="boxshadow " key={id}>
       <div className="product-grid">
         <div className="product-image">
-          <a href="#" className="image">
-            <img className="img-1" src={product.img[0]} alt={product.name} />
-            <img className="img-2" src={product.img[1]} alt={product.name} />
-          </a>
+          <Link to={`/product/${id}`} className="image">
+            <img className="img-1" src={img[0]} alt={product.name} />
+            <img className="img-2" src={img[1]} alt={product.name} />
+          </Link>
           <ul className="product-links">
             <li>
               <a href="#">
@@ -39,10 +41,10 @@ const ProductCard = ({ product }) => {
             <li className="fas fa-star disable"></li>
           </ul>
           <h3 className="title">
-            <a href="#">{product.namepersian}</a>
+            <a href="#">{namepersian}</a>
           </h3>
           <div className="d-flex justify-content-between">
-          <div className="price">{product.price} تومان</div>
+          <div className="price">{price} تومان</div>
           <div className="d-flex ">
             <FaRegHeart className="m-1" />
             <FaRandom className="m-1"/>

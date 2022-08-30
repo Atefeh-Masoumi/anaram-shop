@@ -7,6 +7,7 @@ import aa26002pack1 from "./asset/images/backend-temprory-photos/ghalami/aa-2600
 import aa26002pack2 from "./asset/images/backend-temprory-photos/ghalami/aa-2600-2pack-2.webp";
 import aalonglife4pack1 from "./asset/images/backend-temprory-photos/ghalami/aa-longlife-4pack-1.webp";
 import aalonglife4pack2 from "./asset/images/backend-temprory-photos/ghalami/aa-SuperLife-4pack-2.webp";
+//نیم قلمی
 import nimghalamicharging2pack1 from "./asset/images/backend-temprory-photos/nimghalami/nimghalami-charging-2pack-1.webp";
 import nimghalamicharging2pack2 from "./asset/images/backend-temprory-photos/nimghalami/nimghalami-charging-2pack-2.webp";
 import AAALonglifePower4pack1 from "./asset/images/backend-temprory-photos/nimghalami/AAA-Longlife-Power-4pack-1.webp";
@@ -190,7 +191,7 @@ export const Nimghalami=[
 
 export const sekei =[
     {
-        id:1,
+        id:10,
         category: "coin",
         name:"Varta LR44 coin battery",
         namepersian:"باتری سکه ای V13GA / LR44 وارتا",
@@ -207,7 +208,7 @@ export const sekei =[
     
     },
     {
-        id:2,
+        id:11,
         category: "coin",
         name:"Varta Lithium Coin CR2032 battery",
         namepersian:"باتری سکه ای CR2032 وارتا",
@@ -224,7 +225,7 @@ export const sekei =[
     
     },
     {
-        id:3,
+        id:12,
         category: "coin",
         name:"Varta Lithium Coin CR2016 battery",
         namepersian:"باتری سکه ای CR2016 وارتا",
@@ -241,7 +242,7 @@ export const sekei =[
     
     },
     {
-        id:4,
+        id:13,
         category: "coin",
         namepersian:"باتری سکه ای CR2430 وارتا",
         name:"Varta Lithium Coin CR2430 battery",

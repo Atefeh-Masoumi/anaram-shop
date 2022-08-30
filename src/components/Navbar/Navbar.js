@@ -24,20 +24,20 @@ import usagesubmenu5 from '../../asset/images/torch.png';
 import usagesubmenu6 from '../../asset/images/phone.png';
 
 const SubmenuBaseonTech = [
-  { img: Techsubmenu1, name: "باتری شارژی" },
-  { img: Techsubmenu2, name: "باتری آلکالاین" },
-  { img: Techsubmenu3, name: "باتری نیکل متال هیدرید" },
-  { img: Techsubmenu4, name: "باتری زینک کربن" },
-  { img: Techsubmenu5, name: "باتری روی و هوا" },
-  { img: Techsubmenu6, name: "باتری لیتیومی" },
+  { img: Techsubmenu1, name: "باتری شارژی",id:1 },
+  { img: Techsubmenu2, name: "باتری آلکالاین" ,id:2},
+  { img: Techsubmenu3, name: "باتری نیکل متال هیدرید" ,id:3},
+  { img: Techsubmenu4, name: "باتری زینک کربن" ,id:4},
+  { img: Techsubmenu5, name: "باتری روی و هوا",id:5 },
+  { img: Techsubmenu6, name: "باتری لیتیومی" ,id:6},
 ];
 const SubmenuBaseonUsage =[
-{img:usagesubmenu1, name:"باتری دوربین"},
-{img:usagesubmenu2, name:"سمعک"},
-{img:usagesubmenu3, name:"لوازم پزشکی"},
-{img:usagesubmenu4, name:"ساعت"},
-{img:usagesubmenu5, name:"چراغ قوه"},
-{img:usagesubmenu6, name:"تلفن"}
+{img:usagesubmenu1, name:"باتری دوربین",id:1},
+{img:usagesubmenu2, name:"سمعک",id:2},
+{img:usagesubmenu3, name:"لوازم پزشکی",id:3},
+{img:usagesubmenu4, name:"ساعت",id:4},
+{img:usagesubmenu5, name:"چراغ قوه",id:5},
+{img:usagesubmenu6, name:"تلفن",id:6}
 ]
 const NavbarComponent = () => {
   return (
@@ -168,7 +168,7 @@ const NavbarComponent = () => {
                         {/* submenu base on Usage */}
                         <ul className="sub-menu bg-white ">
                           {SubmenuBaseonUsage.map((item) => (
-                            <li className="d-felx justify-content-center align-item-center ">
+                            <li className="d-felx justify-content-center align-item-center " key={item.id}>
                               <Link to="#" className="">
                                 <img
                                   src={item.img}
@@ -192,7 +192,7 @@ const NavbarComponent = () => {
                         {/* submenu base on Tech */}
                         <ul className="sub-menu bg-white ">
                           {SubmenuBaseonTech.map((item) => (
-                            <li className="d-felx justify-content-center align-item-center ">
+                            <li className="d-felx justify-content-center align-item-center " key={item.id}>
                               <Link to="#" className="">
                                 <img
                                   src={item.img}
