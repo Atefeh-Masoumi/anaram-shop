@@ -118,7 +118,7 @@ const NavbarComponent = () => {
                             </Link>
                           </li>
                           <li>
-                            <Link to="#">
+                            <Link to="/products/battery/aa-size">
                               <img src={bateryghlmi} alt="باتری  قلمی" />
                               <div className="d-flex justify-content-center align-items-center bg-white">
                                 <p className="fs-6"> باتری قلمی</p>

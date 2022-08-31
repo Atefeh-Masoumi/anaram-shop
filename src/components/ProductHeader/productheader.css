@@ -11,7 +11,7 @@
 .productheader-text2 {
   color: #ffffff;
   font-size: 46px;
-  font-weight: 100;
+  font-weight: 500;
 }
 .productheader-text3 {
   color: #ffffff;
@@ -22,4 +22,12 @@
 .text-transform{
   top: 30%;
     right: 70%;
+}
+.text-transform2{
+  top: 35%;
+    right: 70%;
+}
+.text-transform3{
+  top: 42%;
+  right: 70%;
 }

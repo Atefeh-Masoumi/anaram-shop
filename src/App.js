@@ -5,6 +5,7 @@ import NavbarComponent from "./components/Navbar/Navbar";
 import HomePage from "./pages/Home/HomePage";
 import LoginPage from "./pages/LoginPage/Login";
 import Products from "./pages/ProductPages/AllProducts";
+import AASizeBattery from "./pages/ProductPages/categories/Battery/AA/AA";
 import AAASizeBattery from "./pages/ProductPages/categories/Battery/AAA/AAA";
 import Profilepage from "./pages/Profile/Profilepage";
 import SignUpPage from "./pages/SignUpPage/SignupPage";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/profile" element={<Profilepage/>}/>
         <Route path="/products" element={<Products/>}/>
         <Route path="/products/battery/aaa-size" element={<AAASizeBattery/>}/>
+        <Route path="/products/battery/aa-size" element={<AASizeBattery/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
