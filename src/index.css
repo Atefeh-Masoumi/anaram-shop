@@ -11,8 +11,7 @@ body {
 
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 ul{
@@ -20,6 +19,7 @@ ul{
 }
 a{
   text-decoration: none!important;
+  color: #000;
 }
 ul{
   padding: 0;

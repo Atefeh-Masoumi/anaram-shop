@@ -22,27 +22,33 @@ const Battery = [
   {
     img: bateryghlmi,
     name: "باتری قلمی",
+    id:1,
   },
   {
     img: baterynimghlmi,
     name: "باتری نیم قلمی",
+    id:2,
   },
   {
     img: baterysizec,
     name: "باتری متوسط",
+    id:3,
   },
   {
     img: baterysized,
     name: "باتری بزرگ",
+    id:4,
   },
 
   {
     img: bateryketabi,
     name: "باتری کتابی",
+    id:5,
   },
   {
     img: bateryseke,
     name: "باتری سکه ای",
+    id:6,
   },
 ];
 
@@ -81,7 +87,7 @@ const HomePage = () => {
             </div>
             <div className="d-flex flex-row p-2 ">
               {Battery.map((b) => (
-                <div className="m-4 d-flex justify-content-center flex-column text-category">
+                <div className="m-4 d-flex justify-content-center flex-column text-category" key={b.id}>
                   <div className="d-flex bg-white Home-img-heading ">
                     <img src={b.img} alt={b.name} className="img-heading" />
                   </div>
@@ -124,7 +130,7 @@ const HomePage = () => {
           >
             {data.ghalami.map((product) => (
               <div className="col-md-4 col-sm-6" key={product.id}>
-                <SwiperSlide>
+                <SwiperSlide key={product.id}>
                   <ProductCard product={product} />
                 </SwiperSlide>
               </div>
@@ -162,7 +168,7 @@ const HomePage = () => {
         >
           {data.Nimghalami.map((product) => (
             <div className="col-md-4 col-sm-6" key={product.id}>
-              <SwiperSlide>
+              <SwiperSlide key={product.id}>
                 <ProductCard product={product} />
               </SwiperSlide>
             </div>
@@ -199,7 +205,7 @@ const HomePage = () => {
         >
           {data.sekei.map((product) => (
             <div className="col-md-4 col-sm-6" key={product.id}>
-              <SwiperSlide>
+              <SwiperSlide  key={product.id}>
                 <ProductCard product={product} />
               </SwiperSlide>
             </div>

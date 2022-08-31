@@ -2,19 +2,24 @@
   color: #ffffff;
   font-size: 41px;
   font-family: var(--mainfont);
-  
 }
 .Header-img {
   width: 100%;
+  
+  position: relative;
 }
 .productheader-text2 {
   color: #ffffff;
   font-size: 46px;
   font-weight: 100;
 }
-.productheader-text3{
-    color: #FFFFFF;
-    font-size: 22px;
-    font-weight: 200;
-    line-height: 1.8em;
+.productheader-text3 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 1.8em;
+}
+.text-transform{
+  top: 30%;
+    right: 70%;
 }

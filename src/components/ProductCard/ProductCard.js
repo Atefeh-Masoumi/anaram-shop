@@ -15,8 +15,8 @@ const ProductCard = ({ product }) => {
       <div className="product-grid">
         <div className="product-image">
           <Link to={`/product/${id}`} className="image">
-            <img className="img-1" src={img[0]} alt={product.name} />
-            <img className="img-2" src={img[1]} alt={product.name} />
+            <img className="img-1" src={img[0]} alt={product.name} loading="lazy"/>
+            <img className="img-2" src={img[1]} alt={product.name} loading="lazy"/>
           </Link>
           <ul className="product-links">
             <li>

@@ -110,7 +110,7 @@ const NavbarComponent = () => {
                         {/* sub menu */}
                         <ul className="sub-menu bg-white">
                           <li className="w-full">
-                            <Link to="#" className="">
+                            <Link to="/products/battery/aaa-size" className="">
                               <img src={baterynimghlmi} alt="باتری نیم قلمی" />
                               <div className="d-flex justify-content-center align-items-center bg-white">
                                 <p className="fs-6"> باتری نیم قلمی</p>
