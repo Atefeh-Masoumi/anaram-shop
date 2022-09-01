@@ -1,34 +1,18 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import axios from "axios";
+import React from "react";
 import imag2 from '../../../../../asset/images/2-انواع-باتری-قلمی.webp'
-import { setProducts } from "../../../../../Redux/actions/productsActions";
+import image1 from '../../../../../asset/images/انواع-باتری-قلمی.webp'
 import ProductHeader from "../../../../../components/ProductHeader/ProductHeader";
 import'./AA.css';
+
 const AASizeBattery = () => {
-  const products = useSelector((state) => state.allProducts.products);
-  const dispatch = useDispatch();
-  const fetchProducts = async () => {
-    const response = await axios
-      .get("https://fakestoreapi.com/products")
-      .catch((err) => {
-        console.log("Err: ", err);
-      });
-    dispatch(setProducts(response.data));
-  };
-
-  useEffect(() => {
-    fetchProducts();
-  }, []);
-  console.log("Products :", products);
-
   return (
+    
     <div className="bg-color">
       <ProductHeader />
-      <div className="container " >
+      <div className="container" >
         <div className="md-3"></div>
         {/* start of text content */}
-        <div className="md-5 bg-white rounded productpage-text-container p-4 mainfont ">
+        <div className="md-5 bg-white rounded productpage-text-container p-4 mainfont mt-4  ">
           <h1 className="mainfont font-weight-600"> باتری قلمی وارتا</h1>
           <p>
             از آن جایی که<strong> باتری</strong> قلمی <strong>وارتا </strong>
@@ -77,7 +61,7 @@ const AASizeBattery = () => {
             تا با توجه به نوع کاربرد، باتری مناسب را انتخاب و خریداری نموده تا
             در هزینه خرید باتری صرفه جویی کند.
           </p>
-        </div>
+        
         <h2>اجزای باتری قلمی AA</h2>
         <p>
           باتری قلمی یا پیل الکتریکی دارای هسته سلولی است که حاوی مواد شیمیایی
@@ -92,7 +76,7 @@ const AASizeBattery = () => {
         </ul>
         <img
           class="alignnone wp-image-26933 size-full entered lazyloaded exited"
-          src="https://anaram.shop/wp-content/uploads/2022/05/انواع-باتری-قلمی.jpg"
+          src={image1}
           alt="خرید باتری قلمی وارتا مناسب تجهیزات دیجیتالی"
           width="1200"
           height="600"
@@ -259,6 +243,7 @@ const AASizeBattery = () => {
           </strong>
           ثبت سفارش نمایید.
         </p>
+        </div>
       </div>
     </div>
   );
